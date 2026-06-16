@@ -1,0 +1,73 @@
+.section {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+.goldText {
+    background: var(--reverse-menu-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactContent {
+    max-width: 700px;
+}
+
+.contactText {
+    font-size: 1.2rem;
+    color: var(--logo-hover-color);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactButton {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    color: var(--title-primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+}
+
+.contactButton:hover {
+    border-color: #d4af37;
+    background: rgba(212, 175, 55, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contactButton:nth-child(odd) {
+       background:var(--menu-color);
+}
+
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contactButton {
+        width: 100%;
+    }
+}

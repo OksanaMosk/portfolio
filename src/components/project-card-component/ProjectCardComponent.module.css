@@ -1,0 +1,37 @@
+ .imagePlaceholder  {
+     width: 100%;
+     aspect-ratio: 2/1.5;
+     background: #111;
+     border: 1px solid #222;
+     border-radius: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color:dimgrey;
+ }
+ .projectTitle {
+     background: var(--color-fav);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ .projectDescription {
+     font-size: 1.1rem;
+     line-height: 1.7;
+     letter-spacing: 1px;
+     color: var(--logo-hover-color);
+ }
+ .tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    font-size: 14px;
+    background: var(--color-fav);
+    color: var(--color-text-muted);
+    font-weight: 500;
+}

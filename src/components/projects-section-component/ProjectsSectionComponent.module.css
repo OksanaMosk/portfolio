@@ -1,0 +1,74 @@
+.section {
+    min-height: 100vh;
+    padding: 80px 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    background: var(--color-fav);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3rem;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+.imageWrapper {
+    height: 200px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+}
+
+.cardContent {
+    padding: 1.5rem;
+}
+
+.projectTitle {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.projectDescription {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.tagList {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 0.75rem;
+    background: #222;
+    color: #ccc;
+    padding: 0.3rem 0.8rem;
+    border-radius: 100px;
+}

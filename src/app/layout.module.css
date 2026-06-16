@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.main {
+  flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #333;
+}
