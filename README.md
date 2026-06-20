@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Fullstack Developer Portfolio | Oksana
 
-## Getting Started
+A professional fullstack portfolio application showcasing dynamic web development skills. The frontend is built with Next.js using Static Site Generation (SSG) for ultra-fast loading speeds and production performance.
 
-First, run the development server:
+🔗 **Live Demo:** [https://portfolioks.duckdns.org:8444](https://portfolioks.duckdns.org:8444)
 
+---
+
+## 🛠️ Tech Stack & Architecture
+
+* **Frontend:** Next.js (React), TypeScript, Redux Toolkit, Tailwind CSS / PostCSS
+* **Deployment Model:** Static Site Generation (SSG) via `output: 'export'`
+* **Backend Experience:** Django (Python), Node.js, REST APIs, JWT Authentication
+* **Database & Cloud:** Supabase (PostgreSQL), MongoDB
+* **Advanced Features:** WebSockets, Canvas API, Google Maps Integration
+* **DevOps & Hosting:** Docker, Docker Compose, Nginx (Alpine), SSL (Let's Encrypt), VPS Hosting (VPS.ua)
+
+---
+
+## 📁 Featured Projects
+
+### 1. 🍸 VIPBoozer
+An interactive booking platform utilizing **WebSockets** for real-time status updates and the **Canvas API** for visual table mapping.
+
+### 2. 🚗 AutoRiaClone
+A fully functional car marketplace clone featuring secure user moderation, **PrivatBank API** payment/service integration, and dynamic user chats.
+
+---
+
+## 💻 Local Development & Build Workflow
+
+To add new content (like project videos), modify the code, and export the static build:
+
+### 1. Run in Development Mode
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) to preview your changes locally.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Generate Static Export (`/out` folder)
+When you are ready to update the live website, compile the project into static files:
+```bash
+npm run build
+```
+This script triggers `next build`, optimizes assets, and generates the production-ready static site inside the `/out` directory.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🐳 Production Deployment
 
-## Learn More
+The generated static layout and configuration files are pushed to GitHub, pulled to the **VPS.ua server**, and served efficiently via Nginx using Docker Compose.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To apply updates on the live server:
+```bash
+git fetch --all
+git reset --hard origin/master
+docker compose down && docker compose up -d
+```

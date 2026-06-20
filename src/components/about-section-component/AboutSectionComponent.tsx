@@ -1,5 +1,6 @@
-import styles from "./AboutSectionComponent.module.css";
 import  Image from "next/image"
+import styles from "./AboutSectionComponent.module.css";
+
 export const AboutSectionComponent = () => (
   <section id="about" className={styles.section}>
       <h2 className={styles.sectionTitle}>About Me</h2>

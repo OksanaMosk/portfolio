@@ -2,8 +2,8 @@
 
 import { useTheme } from "next-themes";
 import {useEffect, useState} from "react";
-import styles from "./ThemesButtonComponent.module.css";
 import Image from "next/image";
+import styles from "./ThemesButtonComponent.module.css";
 
 const ThemesButtonComponent = () => {
     const { theme, setTheme } = useTheme();

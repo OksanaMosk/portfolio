@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       { url: "/fav/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/fav/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
-    apple: "/favicon2/apple-touch-icon.png",
+     apple: "/fav/apple-touch-icon.png",
   },
 };
 
@@ -55,7 +55,7 @@ export default function RootLayout({
                   {children}
               </main>
               <footer className={styles.footer}>
-                  <p>© {new Date().getFullYear()} — Built with Next.js & Hetzner</p>
+                  <p>© {new Date().getFullYear()} — Built with Next.js. Deployed via Docker & Nginx on VPS.ua</p>
               </footer>
           </div>
       </Providers>

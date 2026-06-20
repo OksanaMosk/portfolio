@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import type { FC } from "react";
-
-import styles from "./BurgerMenuComponent.module.css";
 import ThemesButtonComponent from "@/components/themesButtonComponent/ThemesButtonComponent";
+import styles from "./BurgerMenuComponent.module.css";
 
 type BurgerMenuProps = {
     isOpen: boolean;

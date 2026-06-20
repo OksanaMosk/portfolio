@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import styles from "./HeaderClientComponent.module.css";
+import { useState } from "react";
 import ThemesButtonComponent from "@/components/themesButtonComponent/ThemesButtonComponent";
 import { BurgerMenuComponent } from "@/components/burger-menu-component/BurgerMenuComponent";
-import Image from "next/image";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import styles from "./HeaderClientComponent.module.css";
 
 export const HeaderClientComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ export const HeaderClientComponent = () => {
             <nav className={styles.navbar}>
                 <Link href="/" className={styles.logoLink}>
                     <Image
-                        src="/favicon/android-chrome-512x512.png"
+                        src="/fav/android-chrome-512x512.png"
                         alt="logo"
                         width={80}
                         height={80}

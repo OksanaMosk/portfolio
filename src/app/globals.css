@@ -16,9 +16,17 @@
     #7a5c1e,
     #f5e6a1,
     #f5e6a1,
-   #f5e6a1,
+    #f5e6a1,
     #7a5c1e
   );
+    --reverse-color: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 30%,
+    #1f2937 50%,
+    #000 70%,
+    #000 100%
+);
     --color-background:linear-gradient(90deg, #ae8625, #f7ef8a, #d2ac47, #edc967)
 }
 html {

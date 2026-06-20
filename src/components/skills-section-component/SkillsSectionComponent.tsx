@@ -16,7 +16,16 @@ export const SkillsSectionComponent = () => {
         },
         {
             name: "Cloud, DevOps & Tools",
-            skills: ["Firebase Auth", "Google Maps API", "AWS", "Docker", "Hetzner", "Postman", "REST API"]
+            skills: [
+                "AWS",
+                "Docker",
+                "Nginx",
+                "VPS.ua (Linux)",
+                "REST API",
+                "Firebase Auth",
+                "Google Maps API",
+                "Postman"
+            ]
         },
         {
             name: "Core Competencies",
